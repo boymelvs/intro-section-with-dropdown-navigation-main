@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="this is my solution to the intro section with dropdown navigation challenge from frontend mentor" />
+      <meta name="keyword" content="htmls, css, flexbox, , grid, javascrip" />
+      <meta name="author" content="melvin" />
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+      <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+      <link rel="stylesheet" href="./styles/styles.css" />
+   </head>
+   <body>
+      <div class="container">
+         <header class="header">
+            <nav class="nav_bar">
+               <!-- /* logo */ -->
+               <div class="logo_container">
+                  <img src="./images/logo.svg" alt="snap logo" class="snap_logo" />
+               </div>
+
+               <!-- /* menus */ -->
+               <div class="menus_login_register_container">
+                  <div class="menu_overlay_side"></div>
+                  <div class="menu_side">
+                     <div class="menus_container">
+                        <!-- /* features checkbox */ -->
+                        <input type="checkbox" id="features_checkbox" class="features_checkbox" />
+
+                        <!-- /* features */ -->
+                        <div class="features_list">
+                           <label for="features_checkbox" class="title_label">
+                              <span class="name">Features</span>
+                              <span class="arrow">
+                                 <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="arrow_down" />
+                              </span>
+                           </label>
+
+                           <ul class="dropdown_container">
+                              <li>
+                                 <a href="#todoList" class="child"><img src="./images/icon-todo.svg" alt="Todo List" />Todo List </a>
+                              </li>
+
+                              <li>
+                                 <a href="#calendar" class="child"><img src="./images/icon-calendar.svg" alt="Calendar" />Calendar </a>
+                              </li>
+
+                              <li>
+                                 <a href="#reminders" class="child"><img src="./images/icon-reminders.svg" alt="Reminders" />Reminders </a>
+                              </li>
+
+                              <li>
+                                 <a href="#planning" class="child"><img src="./images/icon-planning.svg" alt="Planning" />Planning </a>
+                              </li>
+                           </ul>
+                        </div>
+
+                        <!-- /* company checkbox */ -->
+                        <input type="checkbox" id="company_checkbox" class="company_checkbox" />
+
+                        <!-- /* company */ -->
+                        <div class="company_list">
+                           <label for="company_checkbox" class="title_label">
+                              <span class="name">Company</span>
+                              <span class="arrow">
+                                 <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="arrow_down" />
+                              </span>
+                           </label>
+
+                           <ul class="dropdown_container company_dropdown">
+                              <li><a href="#history" class="child">History</a></li>
+
+                              <li><a href="#ourTeam" class="child">Our Team</a></li>
+
+                              <li><a href="#blog" class="child"> Blog </a></li>
+                           </ul>
+                        </div>
+
+                        <!-- /* careers */ -->
+                        <div class="careers">
+                           <span class="name">Careers</span>
+                        </div>
+
+                        <!-- /* about */ -->
+                        <div class="about">
+                           <span class="name">About</span>
+                        </div>
+                     </div>
+
+                     <!-- /* login register button */ -->
+                     <div class="login_register_btn_container">
+                        <!-- <div class="login_container"> -->
+                        <button type="button" class="login_btn">Login</button>
+                        <!-- </div> -->
+
+                        <!-- <div class="register_container"> -->
+                        <button type="button" class="register_btn">Register</button>
+                        <!-- </div> -->
+                     </div>
+                  </div>
+               </div>
+
+               <!-- /* burger menu */ -->
+               <input type="checkbox" id="burger_checkbox" class="burger_checkbox" />
+
+               <label for="burger_checkbox" class="burger_label">
+                  <div class="burger_container">
+                     <div class="burger_line line1"></div>
+                     <div class="burger_line line2"></div>
+                     <div class="burger_line line3"></div>
+                  </div>
+               </label>
+            </nav>
+         </header>
+
+         <main class="main_content">
+            <div class="hero">
+               <img src="./images/image-hero-mobile.png" alt="Mobile Hero" class="mobile_hero" />
+
+               <img src="./images/image-hero-desktop.png" alt="Desktop Hero" class="desktop_hero" />
+            </div>
+
+            <div class="info">
+               <div class="title_description_container">
+                  <h1 class="title_remote">Make remote work</h1>
+                  <p class="description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+
+                  <div class="learnmore_btn_container">
+                     <button type="button" class="learnmore_btn">Learn more</button>
+                  </div>
+               </div>
+
+               <div class="client">
+                  <ul class="client_list">
+                     <li>
+                        <a href="#databiz">
+                           <img src="./images/client-databiz.svg" alt="Databiz" class="databiz" />
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#audiophile">
+                           <img src="./images/client-audiophile.svg" alt="Audiophile" class="audiophile" />
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#meet">
+                           <img src="./images/client-meet.svg" alt="Meet" class="meet" />
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="maker">
+                           <img src="./images/client-maker.svg" alt="Maker" class="maker" />
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </main>
+         <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="" traget="_blank">boymelvs</a>
+         </footer>
+      </div>
+
+      <script src="./scripts/index.js"></script>
+   </body>
+</html>
