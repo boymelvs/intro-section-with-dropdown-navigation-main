@@ -276,6 +276,7 @@ input[type="checkbox"] {
    transform: translateY(-25%);
    position: absolute;
    top: 0;
+   font-weight: var(--font-weight-500);
 }
 
 @media (min-width: 860px) {
