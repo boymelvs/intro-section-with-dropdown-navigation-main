@@ -81,11 +81,9 @@ body {
 }
 
 .menus_login_register_container {
-   display: flex;
+   display: none;
    background: transparent;
-   z-index: 98;
-
-   position: absolute;
+   position: fixed;
    top: 0;
    right: 0;
    width: 100%;
